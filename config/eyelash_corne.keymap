@@ -97,6 +97,42 @@
             key-positions = <42 43>;
             timeout-ms = <300>;
         };
+
+        Ctrl_X {
+            bindings = <&kp LC(X)>;
+            key-positions = <42 30>;
+            timeout-ms = <300>;
+        };
+
+        semicolon-Return {
+            bindings = <&semicolon_Return>;
+            key-positions = <25 26>;
+            layers = <0>;
+        };
+
+        space_EnCn {
+            bindings = <&space_EnCn>;
+            key-positions = <44 45>;
+            timeout-ms = <300>;
+        };
+    };
+
+    macros {
+        semicolon_Return: semicolon_Return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&macro_wait_time 30>, <&kp RET>;
+
+            label = "SEMICOLON_RETURN";
+        };
+
+        space_EnCn: space_EnCn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&macro_wait_time 30>, <&kp LC(SPACE)>;
+
+            label = "SPACE_ENCN";
+        };
     };
 
     keymap {
