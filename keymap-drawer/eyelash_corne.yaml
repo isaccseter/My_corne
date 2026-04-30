@@ -49,12 +49,60 @@ layers:
   - Ctl+$$mdi:keyboard-space$$
   - {t: \, s: '|'}
   - {t: /, s: '?'}
+  '1':
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - <
+  - '>'
+  - {t: '-', s: _}
+  - '|'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - '{'
+  - '}'
+  - $
+  - '?'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '*'
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
+  - '&'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '#'
+  - (
+  - )
+  - {t: ;, s: ':'}
+  - '"'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - +
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '%'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '@'
+  - ':'
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - <
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 12]
   k: '&soft_off'
 - p: [25, 26]
   k: '&semicolon_Return'
-  l: [默认层]
 - p: [44, 45]
   k: '&space_EnCn'
 - p: [39, 40]
@@ -67,3 +115,5 @@ combos:
   k: '&CtrA_CtrC'
 - p: [13, 14]
   k: Ctl+V
+- p: [42, 43]
+  k: '&CtrA_Del'
