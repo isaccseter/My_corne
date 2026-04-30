@@ -84,7 +84,7 @@
         quick-tap-ms = <150>;
         require-prior-idle-ms = <125>;
         flavor = "balanced";
-        hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47 42 43 44>;
+        hold-trigger-key-positions = <45 46 47 42 43 44 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         hold-trigger-on-release;
     };
 
@@ -98,7 +98,7 @@
         quick-tap-ms = <150>;
         require-prior-idle-ms = <125>;
         flavor = "balanced";
-        hold-trigger-key-positions = <45 46 47 42 43 44 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+        hold-trigger-key-positions = <45 46 47 42 43 44 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47>;
         hold-trigger-on-release;
     };
 
@@ -112,14 +112,28 @@
         quick-tap-ms = <150>;
         require-prior-idle-ms = <125>;
         flavor = "balanced";
-        hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47 42 43 44>;
+        hold-trigger-key-positions = <45 46 47 42 43 44 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
         hold-trigger-on-release;
     };
 
     Lmt: Lmt {
         compatible = "zmk,behavior-hold-tap";
         label = "LMT";
-        bindings = <&mo>, <&kp>;
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <125>;
+        flavor = "balanced";
+        hold-trigger-key-positions = <45 46 47 42 43 44 7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 46 47>;
+        hold-trigger-on-release;
+    };
+
+    Rmt_dot: Rmt_dot {
+        compatible = "zmk,behavior-hold-tap";
+        label = "RMT_DOT";
+        bindings = <&kp>, <&dot_exclamation>;
 
         #binding-cells = <2>;
         tapping-term-ms = <250>;
@@ -175,13 +189,13 @@
             key-positions = <42 43>;
         };
 
-        Caps_dot {
-            bindings = <&Caps_dot>;
+        AltsPace {
+            bindings = <&kp LA(SPACE)>;
             key-positions = <38 39>;
         };
 
-        Caps_comma {
-            bindings = <&Caps_comma>;
+        Caps_dot {
+            bindings = <&Caps_dot>;
             key-positions = <37 38>;
             require-prior-idle-ms = <150>;
         };
@@ -227,14 +241,6 @@
 
             label = "CAPS_DOT";
         };
-
-        Caps_comma: Caps_comma {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&caps_word>, <&macro_wait_time 30>, <&kp COMMA>;
-
-            label = "CAPS_COMMA";
-        };
     };
 
     keymap {
@@ -243,10 +249,10 @@
         default_layer {
             display-name = "默认层";
             bindings = <
-&kp ESC          &kp Q  &kp W  &kp E       &kp R                &kp T                             &kp UP                &kp Y          &kp U           &kp I      &kp O    &kp P             &kp BSPC
-&mt LA(TAB) TAB  &kp A  &kp S  &kp D       &kp F                &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J           &kp K      &kp L    &kp ENTER         &minus_caret
-&kp COLON        &kp Z  &kp X  &kp C       &kp V                &kp B      &kp SPACE              &kp DOWN              &kp N          &kp M           &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp BACKSLASH
-                               &kp DELETE  &Ctrl_Z LCTRL LC(Z)  &kp SPACE                                               &kp LC(SPACE)  &kp UNDERSCORE  &kp SLASH
+&kp ESC          &kp Q  &kp W            &kp E              &kp R                &kp T                             &kp UP                &kp Y          &kp U           &kp I               &kp O                 &kp P                  &kp BSPC
+&mt LA(TAB) TAB  &kp A  &kp S            &Lmt LEFT_SHIFT D  &kp F                &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J           &Rmt RIGHT_SHIFT K  &kp L                 &Rmt RIGHT_WIN RETURN  &minus_caret
+&kp COLON        &kp Z  &Lmt LEFT_ALT X  &kp C              &Lmt LCTRL V         &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M    &kp COMMA           &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE       &kp BACKSLASH
+                                         &kp DELETE         &Ctrl_Z LCTRL LC(Z)  &kp SPACE                                               &kp LC(SPACE)  &kp UNDERSCORE  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
