@@ -47,7 +47,7 @@ layers:
   - {t: Ctl+Z, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:keyboard-space$$
   - Ctl+$$mdi:keyboard-space$$
-  - {t: \, s: '|'}
+  - _
   - {t: /, s: '?'}
   '1':
   - {t: '$$mdi:transfer$$', type: trans}
@@ -106,9 +106,7 @@ combos:
 - p: [44, 45]
   k: '&space_EnCn'
 - p: [39, 40]
-  k: $$mdi:apple-keyboard-caps$$
-- p: [38, 39]
-  k: _
+  k: $$mdi:alpha-w-box$$
 - p: [0, 1]
   k: Ctl+C
 - p: [0, 1, 2]
@@ -117,3 +115,7 @@ combos:
   k: Ctl+V
 - p: [42, 43]
   k: '&CtrA_Del'
+- p: [38, 39]
+  k: '&Caps_dot'
+- p: [37, 38]
+  k: '&Caps_comma'
