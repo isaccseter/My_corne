@@ -17,7 +17,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: 'Alt+$$mdi:keyboard-tab$$'}
   - A
   - S
-  - D
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
   - $$mdi:arrow-left-bold$$
@@ -25,22 +25,22 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - J
-  - K
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - L
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: RETURN, h: RIGHT WIN}
   - {t: '-', s: ^}
   - ':'
   - Z
-  - X
+  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
-  - V
+  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
-  - M
+  - {t: M, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '!'}
   - {t: '''', s: '"'}
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
@@ -116,6 +116,6 @@ combos:
 - p: [42, 43]
   k: '&CtrA_Del'
 - p: [38, 39]
-  k: '&Caps_dot'
+  k: Alt+$$mdi:keyboard-space$$
 - p: [37, 38]
-  k: '&Caps_comma'
+  k: '&Caps_dot'
