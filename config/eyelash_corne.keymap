@@ -85,7 +85,6 @@
         semicolon-Return {
             bindings = <&semicolon_Return>;
             key-positions = <25 26>;
-            layers = <0>;
         };
 
         space_EnCn {
@@ -119,6 +118,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <13 14>;
         };
+
+        CtrA_Del {
+            bindings = <&CtrA_Del>;
+            key-positions = <42 43>;
+        };
     };
 
     macros {
@@ -145,6 +149,14 @@
 
             label = "CTRA_CTRC";
         };
+
+        CtrA_Del: CtrA_Del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>, <&macro_wait_time 30>, <&kp DELETE>;
+
+            label = "CTRA_DEL";
+        };
     };
 
     keymap {
@@ -160,6 +172,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp QUESTION       &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp COLON             &kp COMMA              &kp DOT        &kp APOSTROPHE     &trans
+                                        &trans            &trans             &trans                                           &trans       &trans                &trans
+            >;
         };
     };
 };
