@@ -87,23 +87,6 @@
             key-positions = <13 14>;
         };
 
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <0 1>;
-        };
-
-        Ctrl_A {
-            bindings = <&kp LC(A)>;
-            key-positions = <42 43>;
-            timeout-ms = <300>;
-        };
-
-        Ctrl_X {
-            bindings = <&kp LC(X)>;
-            key-positions = <42 30>;
-            timeout-ms = <300>;
-        };
-
         semicolon-Return {
             bindings = <&semicolon_Return>;
             key-positions = <25 26>;
