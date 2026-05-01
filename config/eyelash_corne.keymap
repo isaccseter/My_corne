@@ -283,10 +283,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp  &kp  &kp  &kp  &kp  &kp              &kp       &kp  &kp       &kp UP_ARROW  &kp        &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp         &kp  &kp  &kp  &kp  &kp LEFT  &kp DOWN      &kp RIGHT  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp         &kp       &kp  &kp       &kp           &kp        &kp  &kp
+               &kp  &kp  &kp                        &kp  &kp       &kp
             >;
 
             label = "导航层";
