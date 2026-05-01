@@ -244,7 +244,7 @@
 &kp ESC          &kp Q  &kp W            &kp E              &kp R         &kp T                             &kp UP                &kp Y          &kp U         &kp I               &kp O                 &kp P                  &kp BSPC
 &mt LA(TAB) TAB  &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 0 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &Rmt RIGHT_WIN RETURN  &minus_caret
 &kp COLON        &kp Z  &Lmt LEFT_ALT X  &kp C              &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &kp COMMA           &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE       &kp BACKSLASH
-                                         &kp DELETE         &mo 5         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
+                                         &kp DELETE         &tog 5        &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -255,7 +255,7 @@
 &trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp QUESTION       &trans
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
 &trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp COLON             &kp COMMA              &kp DOT        &kp APOSTROPHE     &trans
-                                        &trans            &trans             &trans                                           &trans       &trans                &trans
+                                        &trans            &tog 1             &trans                                           &trans       &trans                &trans
             >;
 
             label = "符号层";
@@ -263,10 +263,10 @@
 
         Navigation {
             bindings = <
-&trans  &kp LC(F)  &kp LC(X)       &kp LEFT_ALT  &trans  &trans                    &trans          &kp PAGE_UP    &kp HOME          &kp UP             &kp END            &select_line  &trans
-&trans  &tog 2     &kp LEFT_SHIFT  &kp LCTRL     &trans  &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT          &kp DOWN           &kp RIGHT          &kp DELETE    &trans
+&trans  &trans     &kp LC(X)       &kp LEFT_ALT  &trans  &trans                    &trans          &kp PAGE_UP    &kp HOME          &kp UP             &kp END            &select_line  &trans
+&trans  &kp LC(F)  &kp LEFT_SHIFT  &kp LCTRL     &trans  &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT          &kp DOWN           &kp RIGHT          &kp DELETE    &trans
 &trans  &trans     &kp LC(C)       &kp LC(V)     &trans  &trans  &trans            &trans          &kp LC(Z)      &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &kp K_APPLICATION  &kp INS       &trans
-                                   &trans        &trans  &trans                                    &trans         &trans            &trans
+                                   &trans        &tog 2  &trans                                    &trans         &trans            &trans
             >;
 
             label = "导航层";
@@ -274,10 +274,10 @@
 
         Numbers {
             bindings = <
-&trans  &trans  &kp N9  &kp N8  &kp N7  &trans                    &trans          &trans  &trans  &kp RALT   &trans     &trans  &trans
-&trans  &trans  &kp N6  &kp N5  &kp N4  &kp N0            &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RSHFT  &tog 3  &trans
-&trans  &trans  &kp N3  &kp N2  &kp N1  &trans  &trans            &trans          &trans  &trans  &kp COMMA  &kp DOT    &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &kp FSLH   &kp N9  &kp N8  &kp N7  &kp STAR                       &trans          &trans  &trans  &kp RALT   &kp E      &trans         &trans
+&trans  &kp MINUS  &kp N6  &kp N5  &kp N4  &kp PLUS               &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RSHFT  &kp BACKSPACE  &trans
+&trans  &kp X      &kp N3  &kp N2  &kp N1  &kp PERCENT  &trans            &trans          &trans  &trans  &kp COMMA  &kp DOT    &trans         &trans
+                           &trans  &tog 3  &trans                                         &kp N0  &trans  &trans
             >;
 
             label = "数字层";
