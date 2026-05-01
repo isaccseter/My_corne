@@ -261,7 +261,7 @@
         colon_enter: colon_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UNDER>, <&macro_wait_time 30>, <&kp RET>;
+            bindings = <&kp COLON>, <&macro_wait_time 30>, <&kp RET>;
 
             label = "COLON_ENTER";
         };
