@@ -27,7 +27,7 @@ layers:
   - {t: J, h: 默认层}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: 符号层}
-  - {t: RETURN, h: RIGHT WIN}
+  - {t: RETURN, h: 杂项和小键盘}
   - {t: '-', s: ^}
   - ':'
   - Z
@@ -39,12 +39,12 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - {t: M, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ',', s: <}
+  - {t: ',', s: '?'}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '!'}
   - {t: '''', s: '"'}
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
-  - {t: 各类杂项, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: 杂项和小键盘, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
   - Ctl+$$mdi:keyboard-space$$
   - LEFT WIN
@@ -196,7 +196,7 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '5':
+  功能区和导航快捷键:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  各类杂项:
+  杂项和小键盘:
   - EP OFF
   - PAUSE
   - Alt+$$mdi:arrow-left-bold$$
@@ -272,7 +272,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
-  - {type: held}
+  - {type: held alternate}
   - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
