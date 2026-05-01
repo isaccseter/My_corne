@@ -4,8 +4,11 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -244,7 +247,7 @@
 &kp ESC          &kp Q  &kp W            &kp E              &kp R         &kp T                             &kp UP                &kp Y          &kp U         &kp I               &kp O                 &kp P                  &kp BSPC
 &mt LA(TAB) TAB  &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 0 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &Rmt RIGHT_WIN RETURN  &minus_caret
 &kp COLON        &kp Z  &Lmt LEFT_ALT X  &kp C              &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &kp COMMA           &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE       &kp BACKSLASH
-                                         &kp DELETE         &tog 5        &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
+                                         &kp DELETE         &sl 5         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -294,10 +297,10 @@
 
         Others {
             bindings = <
-&trans  &trans        &kp LA(LEFT)    &kp LA(RIGHT)  &kp F5        &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans          &trans         &trans        &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans         &trans        &trans                                    &trans  &trans  &trans
+&ext_power EP_OFF  &kp C_PAUSE   &kp LA(LEFT)    &kp LA(RIGHT)  &kp F5        &bt BT_CLR_ALL                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG    &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LCTRL      &kp LEFT_ALT  &bt BT_CLR                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_EFF    &bt BT_SEL 4  &bt BT_SEL 2    &bt BT_SEL 1   &bt BT_SEL 0  &bt BT_SEL 3    &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans         &trans        &trans                                            &trans  &trans  &trans
             >;
 
             label = "各类杂项";
