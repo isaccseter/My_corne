@@ -301,48 +301,48 @@ layers:
   - Alt+$$mdi:arrow-right-bold$$
   - F5
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP ASTERISK
   - KP 7
   - KP 8
   - KP 9
   - KP DIVIDE
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - {t: Gui+Ctl+4, s: Gui+Ctl+$}
   - {t: Gui+Ctl+3, s: Gui+Ctl+#}
   - {t: Gui+Ctl+2, s: Gui+Ctl+@}
   - {t: Gui+Ctl+1, s: Gui+Ctl+!}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
   - KP 4
   - KP 5
   - KP 6
   - KP SUBTRACT
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - LGUI
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP NUMLOCK
   - KP 1
   - KP 2
   - KP 3
   - KP DOT
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - {type: held}
   - PgUp
   - KP 0
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   游戏按键的单手键盘:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
