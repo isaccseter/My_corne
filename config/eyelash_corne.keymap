@@ -160,6 +160,16 @@
         flavor = "tap-preferred";
     };
 
+    space_lt: space_lt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SPACE_LT";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        flavor = "tap-preferred";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -207,6 +217,12 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <39 40>;
         };
+
+        colon_enter {
+            bindings = <&colon_enter>;
+            key-positions = <37 38>;
+            layers = <1>;
+        };
     };
 
     macros {
@@ -241,6 +257,14 @@
 
             label = "SELECT_LINE";
         };
+
+        colon_enter: colon_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UNDER>, <&macro_wait_time 30>, <&kp RET>;
+
+            label = "COLON_ENTER";
+        };
     };
 
     keymap {
@@ -249,10 +273,10 @@
         Default {
             display-name = "默认层";
             bindings = <
-&kp ESC                &kp Q  &kp W            &kp E              &kp R         &kp T                             &kp UP                &kp Y          &kp U         &kp I               &kp O                 &kp P             &kp BSPC
-&mt LA(TAB) TAB        &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 3 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &kp RETURN        &minus_caret
-&Gaming_layer 7 COLON  &kp Z  &Lmt LEFT_ALT X  &Llt 5 C           &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &Rlt_comma 4 0      &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE  &kp BACKSLASH
-                                               &kp DELETE         &sl 6         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
+&kp ESC                &kp Q  &kp W            &kp E              &kp R         &kp T                                     &kp UP                &kp Y                  &kp U         &kp I               &kp O                 &kp P             &kp BSPC
+&mt LA(TAB) TAB        &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                           &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &Rlt 3 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &kp RETURN        &minus_caret
+&Gaming_layer 7 COLON  &kp Z  &Lmt LEFT_ALT X  &Llt 5 C           &Lmt LCTRL V  &kp B              &kp SPACE              &kp DOWN              &kp N                  &Rmt RCTRL M  &Rlt_comma 4 0      &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE  &kp BACKSLASH
+                                               &kp DELETE         &sl 6         &space_lt 2 SPACE                                               &space_lt 3 LC(SPACE)  &kp LEFT_WIN  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -260,10 +284,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp QUESTION       &trans
-&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
-&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp COLON             &kp COMMA              &kp DOT        &kp APOSTROPHE     &trans
-                                        &trans            &tog 1             &trans                                           &trans       &trans                &trans
+&trans  &kp GRAVE        &kp LESS_THAN  &Lmt LEFT_ALT GREATER_THAN  &kp MINUS              &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE                     &Rmt RIGHT_ALT RIGHT_BRACE            &kp DOLLAR     &kp QUESTION       &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &Lmt LEFT_CONTROL SLASH     &Lmt LEFT_SHIFT EQUAL  &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &Rmt RIGHT_SHIFT LEFT_PARENTHESIS  &Rmt RIGHT_CONTROL RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
+&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp COLON                          &kp COMMA                             &kp DOT        &kp APOSTROPHE     &trans
+                                        &trans                      &tog 1                 &trans                                           &trans       &trans                             &trans
             >;
 
             label = "符号层";
