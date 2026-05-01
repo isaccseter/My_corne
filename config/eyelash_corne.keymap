@@ -212,7 +212,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <37 38>;
+            key-positions = <41 40>;
         };
 
         Capslock {
@@ -291,10 +291,10 @@
 
         Navigation {
             bindings = <
-&kp  &kp     &kp LC(X)       &kp LEFT_ALT  &kp  &kp              &kp       &kp PAGE_UP    &kp HOME          &kp UP             &kp END            &select_line  &kp
-&kp  &tog 2  &kp LEFT_SHIFT  &kp LCTRL     &kp  &kp         &kp  &kp  &kp  &kp PAGE_DOWN  &kp LEFT          &kp DOWN           &kp RIGHT          &kp DELETE    &kp
-&kp  &kp     &kp LC(C)       &kp LC(V)     &kp  &kp  &kp         &kp       &kp LC(Z)      &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &kp K_APPLICATION  &kp INS       &kp
-                             &kp           &kp  &kp                        &kp            &kp               &kp
+&trans  &kp LC(F)  &kp LC(X)       &kp LEFT_ALT  &trans  &trans                    &trans          &kp PAGE_UP    &kp HOME          &kp UP             &kp END            &select_line  &trans
+&trans  &tog 2     &kp LEFT_SHIFT  &kp LCTRL     &trans  &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT          &kp DOWN           &kp RIGHT          &kp DELETE    &trans
+&trans  &trans     &kp LC(C)       &kp LC(V)     &trans  &trans  &trans            &trans          &kp LC(Z)      &kp LC(LS(LEFT))  &kp LS(LC(RIGHT))  &kp K_APPLICATION  &kp INS       &trans
+                                   &trans        &trans  &trans                                    &trans         &trans            &trans
             >;
 
             label = "导航层";
