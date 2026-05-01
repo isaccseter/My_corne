@@ -45,36 +45,36 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
   - {t: 杂项和小键盘, h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:keyboard-space$$
-  - Ctl+$$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: 导航层}
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: 数字层}
   - LEFT WIN
   - {t: /, s: '?'}
   符号层:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
   - <
-  - '>'
+  - {t: '>', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '-', s: _}
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - '{'
-  - '}'
+  - {t: '}', h: '$$mdi:apple-keyboard-option$$'}
   - $
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - {t: '*', type: held}
-  - {t: /, s: '?'}
-  - {t: '=', s: +}
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - '&'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '#'
-  - (
-  - )
+  - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ), h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':', type: held alternate}
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -143,7 +143,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 导航层, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -193,7 +193,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 数字层, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '0', s: )}
+  - {t: '0', s: ), type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   功能区:
@@ -413,3 +413,6 @@ combos:
   k: {t: '`', s: '~'}
 - p: [39, 40]
   k: $$mdi:apple-keyboard-caps$$
+- p: [37, 38]
+  k: '&colon_enter'
+  l: [符号层]
