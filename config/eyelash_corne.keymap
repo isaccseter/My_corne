@@ -328,10 +328,10 @@
 
         Application {
             bindings = <
-&trans  &trans  &trans     &trans  &trans              &trans                    &trans          &trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF
-&trans  &trans  &kp LALT   &trans  &kp LC(LEFT_SHIFT)  &trans            &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans           &trans
-&trans  &trans  &kp LSHFT  &trans  &kp LCTRL           &trans  &trans            &trans          &trans  &trans      &trans      &trans      &trans           &trans
-                           &trans  &tog 5              &trans                                    &trans  &trans      &trans
+&trans  &trans  &trans     &trans  &trans              &trans                    &trans          &trans  &kp LG(LC(N4))  &kp LG(LC(N5))  &kp LG(LC(N6))  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF
+&trans  &trans  &kp LALT   &trans  &kp LC(LEFT_SHIFT)  &trans            &trans  &trans  &trans  &trans  &kp LG(LC(N1))  &kp LG(LC(N2))  &kp LG(LC(N3))  &trans           &trans
+&trans  &trans  &kp LSHFT  &trans  &kp LCTRL           &trans  &trans            &trans          &trans  &trans          &trans          &trans          &trans           &trans
+                           &trans  &tog 5              &trans                                    &trans  &trans          &trans
             >;
 
             label = "导航快捷键";
