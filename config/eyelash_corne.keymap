@@ -242,9 +242,9 @@
             display-name = "默认层";
             bindings = <
 &kp ESC          &kp Q  &kp W            &kp E              &kp R         &kp T                             &kp UP                &kp Y          &kp U         &kp I               &kp O                 &kp P                  &kp BSPC
-&mt LA(TAB) TAB  &kp A  &kp S            &Lmt LEFT_SHIFT D  &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J         &Rmt RIGHT_SHIFT K  &kp L                 &Rmt RIGHT_WIN RETURN  &minus_caret
+&mt LA(TAB) TAB  &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 0 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &Rmt RIGHT_WIN RETURN  &minus_caret
 &kp COLON        &kp Z  &Lmt LEFT_ALT X  &kp C              &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &kp COMMA           &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE       &kp BACKSLASH
-                                         &kp DELETE         &mo 6         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
+                                         &kp DELETE         &mo 5         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -272,22 +272,15 @@
             label = "导航层";
         };
 
-        layer_3 {
+        Numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N9  &kp N8  &kp N7  &trans                    &trans          &trans  &trans  &kp RALT   &trans     &trans  &trans
+&trans  &trans  &kp N6  &kp N5  &kp N4  &kp N0            &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RSHFT  &tog 3  &trans
+&trans  &trans  &kp N3  &kp N2  &kp N1  &trans  &trans            &trans          &trans  &trans  &kp COMMA  &kp DOT    &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
-        };
 
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
+            label = "数字层";
         };
 
         layer_5 {
