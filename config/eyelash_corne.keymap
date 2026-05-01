@@ -328,10 +328,10 @@
 
         Others_KP {
             bindings = <
-&soft_off       &kp C_PAUSE     &kp LA(LEFT)    &kp LA(RIGHT)   &kp F5          &bt BT_SEL 2              &kp       &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp
-&bt BT_CLR      &kp LG(LC(N4))  &kp LG(LC(N3))  &kp LG(LC(N2))  &kp LG(LC(N1))  &bt BT_SEL 1         &kp  &kp  &kp  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp
-&bt BT_CLR_ALL  &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &bt BT_SEL 0  &kp         &kp       &kp KP_NUMLOCK   &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp KP_DOT       &kp
-                                                &kp PAGE_DOWN   &kp             &kp PAGE_UP                         &kp KP_N0        &kp              &kp
+&soft_off       &kp C_PAUSE     &kp LA(LEFT)    &kp LA(RIGHT)   &kp F5          &bt BT_SEL 2                    &trans          &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans
+&bt BT_CLR      &kp LG(LC(N4))  &kp LG(LC(N3))  &kp LG(LC(N2))  &kp LG(LC(N1))  &bt BT_SEL 1            &trans  &trans  &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
+&bt BT_CLR_ALL  &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &bt BT_SEL 0  &trans            &trans          &kp KP_NUMLOCK   &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp KP_DOT       &trans
+                                                &kp PAGE_DOWN   &trans          &kp PAGE_UP                                     &kp KP_N0        &trans           &trans
             >;
 
             label = "杂项和小键盘";
