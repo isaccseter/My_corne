@@ -331,11 +331,11 @@ layers:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - ''
   - ''
-  - ''
+  - KP NUMLOCK
   - KP 1
   - KP 2
   - KP 3
-  - ''
+  - KP DOT
   - ''
   - PgDn
   - {type: held}
