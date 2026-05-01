@@ -198,7 +198,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   功能区:
   - F24
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F15
   - F9
   - F8
   - F7
@@ -210,8 +210,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F13
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F17
+  - F14
   - F6
   - F5
   - F4
@@ -225,8 +225,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F14
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F16
+  - F13
   - F3
   - F2
   - F1
@@ -301,48 +301,48 @@ layers:
   - Alt+$$mdi:arrow-right-bold$$
   - F5
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - KP ASTERISK
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP DIVIDE
+  - ''
   - $$mdi:bluetooth-off$$
   - {t: Gui+Ctl+4, s: Gui+Ctl+$}
   - {t: Gui+Ctl+3, s: Gui+Ctl+#}
   - {t: Gui+Ctl+2, s: Gui+Ctl+@}
   - {t: Gui+Ctl+1, s: Gui+Ctl+!}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - KP PLUS
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP SUBTRACT
+  - ''
   - BT CLR ALL
   - LGUI
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - KP 1
+  - KP 2
+  - KP 3
+  - ''
+  - ''
   - PgDn
   - {type: held}
   - PgUp
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP 0
+  - ''
+  - ''
   游戏按键的单手键盘:
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
