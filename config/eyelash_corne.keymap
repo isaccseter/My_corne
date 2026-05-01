@@ -172,7 +172,7 @@
         space_EnCn {
             bindings = <&space_EnCn>;
             key-positions = <44 45>;
-            timeout-ms = <300>;
+            timeout-ms = <350>;
         };
 
         CtrC {
@@ -191,11 +191,6 @@
             bindings = <&kp LC(V)>;
             key-positions = <13 14>;
             layers = <0>;
-        };
-
-        CtrA_Del {
-            bindings = <&CtrA_Del>;
-            key-positions = <42 43>;
         };
 
         under {
@@ -237,14 +232,6 @@
             bindings = <&kp LC(A)>, <&macro_wait_time 30>, <&kp LC(C)>;
 
             label = "CTRA_CTRC";
-        };
-
-        CtrA_Del: CtrA_Del {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(A)>, <&macro_wait_time 30>, <&kp DELETE>;
-
-            label = "CTRA_DEL";
         };
 
         select_line: select_line {
