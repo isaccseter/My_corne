@@ -137,6 +137,30 @@
         hold-trigger-on-release;
     };
 
+    Rlt_comma: Rlt_comma {
+        compatible = "zmk,behavior-hold-tap";
+        label = "RLT_COMMA";
+        bindings = <&mo>, <&comma_question>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <125>;
+        flavor = "balanced";
+        hold-trigger-key-positions = <45 46 47 42 43 44 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33>;
+        hold-trigger-on-release;
+    };
+
+    Gaming_layer: Gaming_layer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GAMING_LAYER";
+        bindings = <&tog>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <500>;
+        flavor = "tap-preferred";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -241,12 +265,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Default {
             display-name = "默认层";
             bindings = <
 &kp ESC          &kp Q  &kp W            &kp E              &kp R         &kp T                             &kp UP                &kp Y          &kp U         &kp I               &kp O                 &kp P             &kp BSPC
-&mt LA(TAB) TAB  &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 3 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &Rlt 5 RETURN     &minus_caret
-&kp COLON        &kp Z  &Lmt LEFT_ALT X  &kp C              &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &comma_question     &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE  &kp BACKSLASH
+&mt LA(TAB) TAB  &kp A  &Llt 1 S         &Lmt LEFT_SHIFT D  &Llt 2 F      &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &Rlt 3 J      &Rmt RIGHT_SHIFT K  &Rlt 1 L              &kp RETURN        &minus_caret
+&kp COLON        &kp Z  &Lmt LEFT_ALT X  &Llt 6 C           &Lmt LCTRL V  &kp B      &kp SPACE              &kp DOWN              &kp N          &Rmt RCTRL M  &Rlt_comma 4 0      &Rmt_dot RIGHT_ALT 0  &kp SINGLE_QUOTE  &kp BACKSLASH
                                          &kp DELETE         &sl 5         &kp SPACE                                               &kp LC(SPACE)  &kp LEFT_WIN  &kp SLASH
             >;
 
@@ -286,15 +310,15 @@
             label = "数字层";
         };
 
-        Fkey_Application {
+        Fkey {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+                        &trans  &tog 4  &trans                                    &trans  &trans  &trans
             >;
 
-            label = "功能区和导航快捷键";
+            label = "功能区";
         };
 
         Others_KP {
@@ -306,6 +330,28 @@
             >;
 
             label = "杂项和小键盘";
+        };
+
+        Application {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &tog 6  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "导航快捷键";
+        };
+
+        Gaming {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "游戏按键的单手键盘";
         };
     };
 };
