@@ -45,9 +45,9 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:backspace-reverse-outline$$
   - 各类杂项
-  - {t: '$$mdi:keyboard-space$$', h: LEFT WIN}
-  - {t: 'Ctl+$$mdi:keyboard-space$$', h: RIGHT WIN}
-  - _
+  - $$mdi:keyboard-space$$
+  - Ctl+$$mdi:keyboard-space$$
+  - LEFT WIN
   - {t: /, s: '?'}
   符号层:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -363,7 +363,7 @@ combos:
 - p: [42, 43]
   k: '&CtrA_Del'
 - p: [38, 39]
-  k: Alt+$$mdi:keyboard-space$$
+  k: _
 - p: [41, 40]
   k: {t: '`', s: '~'}
 - p: [39, 40]
