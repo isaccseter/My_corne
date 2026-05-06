@@ -283,9 +283,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+Ctl+7, s: Gui+Ctl+&}
+  - {t: Gui+Ctl+8, s: Gui+Ctl+*}
+  - {t: Gui+Ctl+9, s: Gui+Ctl+(}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -309,10 +309,10 @@ layers:
   - KP DIVIDE
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  - {t: Gui+Ctl+4, s: Gui+Ctl+$}
-  - {t: Gui+Ctl+3, s: Gui+Ctl+#}
-  - {t: Gui+Ctl+2, s: Gui+Ctl+@}
   - {t: Gui+Ctl+1, s: Gui+Ctl+!}
+  - {t: Gui+Ctl+2, s: Gui+Ctl+@}
+  - {t: Gui+Ctl+3, s: Gui+Ctl+#}
+  - {t: Gui+Ctl+4, s: Gui+Ctl+$}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
