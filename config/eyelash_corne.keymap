@@ -234,6 +234,18 @@
             key-positions = <28 29>;
             layers = <0>;
         };
+
+        F2_CtrA_CtrC {
+            bindings = <&F2_CtrA_CtrC>;
+            key-positions = <31 32>;
+            layers = <4>;
+        };
+
+        double_percent {
+            bindings = <&double_percent>;
+            key-positions = <32 33>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -267,6 +279,27 @@
             bindings = <&kp HOME>, <&macro_wait_time 30>, <&kp LS(END)>;
 
             label = "SELECT_LINE";
+        };
+
+        F2_CtrA_CtrC: F2_CtrA_CtrC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp F2>,
+                <&macro_wait_time 15>,
+                <&kp LC(A)>,
+                <&macro_wait_time 15>,
+                <&kp LC(C)>;
+
+            label = "F2_CTRA_CTRC";
+        };
+
+        double_percent: double_percent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PERCENT>, <&macro_wait_time 20>, <&kp PERCENT>;
+
+            label = "DOUBLE_PERCENT";
         };
     };
 
@@ -309,10 +342,10 @@
 
         Numbers {
             bindings = <
-&trans  &kp FSLH   &kp N9  &kp N8  &kp N7  &kp STAR                       &trans          &trans  &trans  &kp RALT   &kp E      &trans  &trans
-&trans  &kp MINUS  &kp N6  &kp N5  &kp N4  &kp PLUS               &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RSHFT  &trans  &trans
-&trans  &kp X      &kp N3  &kp N2  &kp N1  &kp PERCENT  &trans            &trans          &trans  &trans  &kp COMMA  &kp DOT    &trans  &trans
-                           &trans  &tog 3  &trans                                         &kp N0  &trans  &trans
+&trans  &kp FSLH   &kp N9  &kp N8  &kp N7  &kp STAR                    &trans          &trans       &trans  &kp RALT   &kp E      &trans  &trans
+&trans  &kp MINUS  &kp N6  &kp N5  &kp N4  &kp N0              &trans  &trans  &trans  &trans       &trans  &kp RCTRL  &kp RSHFT  &trans  &trans
+&trans  &kp X      &kp N3  &kp N2  &kp N1  &kp PLUS  &trans            &trans          &trans       &trans  &kp COMMA  &kp DOT    &trans  &trans
+                           &trans  &tog 3  &trans                                      &kp PERCENT  &trans  &trans
             >;
 
             label = "数字层";
