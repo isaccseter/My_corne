@@ -29,7 +29,7 @@ layers:
   - {t: L, h: 符号层}
   - RETURN
   - {t: '-', s: ^}
-  - {t: ':', h: 游戏按键的单手键盘}
+  - {t: ':', h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: 导航快捷键}
@@ -325,9 +325,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - LGUI
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -413,3 +413,6 @@ combos:
   k: {t: '`', s: '~'}
 - p: [39, 40]
   k: $$mdi:apple-keyboard-caps$$
+- p: [28, 29]
+  k: $$mdi:apple-keyboard-shift$$
+  l: [默认层]
