@@ -330,7 +330,7 @@
             bindings = <
 &trans  &trans  &trans     &trans  &trans              &trans                    &trans          &trans  &kp LG(LC(N4))  &kp LG(LC(N5))  &kp LG(LC(N6))  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF
 &trans  &trans  &kp LALT   &trans  &kp LC(LEFT_SHIFT)  &trans            &trans  &trans  &trans  &trans  &kp LG(LC(N1))  &kp LG(LC(N2))  &kp LG(LC(N3))  &trans           &trans
-&trans  &trans  &kp LSHFT  &trans  &kp LCTRL           &trans  &trans            &trans          &trans  &trans          &trans          &trans          &trans           &trans
+&trans  &trans  &kp LSHFT  &trans  &kp LCTRL           &trans  &trans            &trans          &trans  &kp LG(LC(N7))  &kp LG(LC(N8))  &kp LG(LC(N9))  &trans           &trans
                            &trans  &tog 5              &trans                                    &trans  &trans          &trans
             >;
 
@@ -340,7 +340,7 @@
         Others_KP {
             bindings = <
 &soft_off       &kp C_PAUSE     &kp LA(LEFT)    &kp LA(RIGHT)   &kp F5          &bt BT_SEL 2                    &trans          &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans
-&bt BT_CLR      &kp LG(LC(N4))  &kp LG(LC(N3))  &kp LG(LC(N2))  &kp LG(LC(N1))  &bt BT_SEL 1            &trans  &trans  &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
+&bt BT_CLR      &kp LG(LC(N1))  &kp LG(LC(N2))  &kp LG(LC(N3))  &kp LG(LC(N4))  &bt BT_SEL 1            &trans  &trans  &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &trans
 &bt BT_CLR_ALL  &kp LGUI        &kp LSHFT       &kp LCTRL       &kp LALT        &bt BT_SEL 0  &trans            &trans          &kp KP_NUMLOCK   &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp KP_DOT       &trans
                                                 &kp PAGE_DOWN   &trans          &kp PAGE_UP                                     &kp KP_N0        &trans           &trans
             >;
