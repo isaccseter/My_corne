@@ -43,7 +43,7 @@ layers:
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '!'}
   - {t: '''', s: '"'}
   - {t: \, s: '|'}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 游戏按键的单手键盘}
   - {t: 杂项和小键盘, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-space$$', h: 导航层}
   - {t: 'Ctl+$$mdi:keyboard-space$$', h: 数字层}
@@ -174,7 +174,7 @@ layers:
   - {type: held}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - X
@@ -372,7 +372,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - G
-  - {t: I, h: 游戏按键的单手键盘}
+  - I
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -386,7 +386,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - B
-  - B
+  - {t: B, h: 默认层}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -413,6 +413,3 @@ combos:
   k: {t: '`', s: '~'}
 - p: [39, 40]
   k: $$mdi:apple-keyboard-caps$$
-- p: [37, 38]
-  k: '&colon_Shiftreturn'
-  l: [符号层]
