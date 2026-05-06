@@ -215,7 +215,7 @@ layers:
   - F6
   - F5
   - F4
-  - F24
+  - Meh+F8
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
